@@ -1,0 +1,208 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    min-width: fit-content;
+}
+
+.content {
+    background-color:#121212;
+}
+
+.face {
+    filter: brightness(320%);
+    margin-right: 10px;
+}
+
+p {word-wrap: break-word;
+    font-family: "Odibee Sans", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    color:#cccccc;
+    transition: all ease-in-out 0.5s;
+    }
+
+.card1 a {
+    color: #F05454 !important;
+}
+
+.card1 a:hover {
+    color: #a75454 !important;
+}
+
+.color2 {
+    color: #F05454 !important;
+}
+
+.image {
+    width: 85%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 95px;
+    aspect-ratio: 16/7;
+    object-fit: cover;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url('goal.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.navo{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    padding: 3px;
+    background-color:#252525;
+}
+.navo ul {
+    margin: 0;
+    display: block;
+    float: right;
+}
+.navo p{
+    margin: 0;
+    padding: 10px;
+    color:#F05454;
+    font-size: 140%;
+    display: inline-block;
+}
+.navo ul p{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    color:#F05454;
+    font-size: 140%;
+}
+
+.image p {
+    padding-top: 90px !important;
+    padding-left: 25px;
+    font-size: 420%;
+    color: #F5F5F5;
+}
+
+.image .display-5 {
+    padding-left: 35px;
+    padding-top: 0 !important;
+    font-size: 220%;
+    color: #F5F5F5;
+}
+
+.btn-primary {
+    background-color: #F05454 !important;
+    border: none !important;
+    font-family: "Odibee Sans", sans-serif !important;
+    font-weight: 400;
+    padding-left: 35px;
+    font-style: normal;
+    font-size: 140% !important;
+    margin-left: 35px;
+    margin-bottom: 20px;
+}
+
+.part-2{
+    margin-top: 50px !important;
+}
+
+
+.part-2 .display-4 {
+    color: #30475E;
+}
+
+.card1 {
+    background-color: #252525 !important;
+    border: none !important;
+    border-radius: 10px;
+    width: 85% !important;
+    margin: auto;
+}
+
+.card1 p {
+    font-size: 4vh;
+    padding: 15px;
+}
+
+.part-3{
+    margin-top: 50px !important;
+    width: 80% !important;
+    margin: auto;
+    margin-bottom: 40px;
+    position: relative;
+}
+.part-3 .display-4 {
+    color: #30475E;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 15px
+}
+
+.gallery{
+    border-radius: 10px !important;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.div-gal{
+    aspect-ratio: 16/9 !important;
+    overflow-y: hidden;
+}
+
+.arrow-right{
+    width: 3.75vh;
+    aspect-ratio: 1/1;
+    background-size:cover !important;
+    background-position: center !important;
+    background: url('right.svg');
+    position: absolute;
+    filter:invert(100%);
+    top: 50%;
+    right: -2%;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+}
+
+.arrow-left{
+    width: 3.75vh;
+    aspect-ratio: 1/1;
+    background-size:cover !important;
+    background-position: center !important;
+    background: url('left.svg');
+    position: absolute;
+    filter:invert(100%);
+    top: 50%;
+    left: -2%;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+}
+
+.arrow-left:hover {
+    filter: invert(80%) !important;
+    transition:all 0.3s ease-in-out;
+}
+
+.arrow-right:hover {
+    filter: invert(80%) !important;
+    transition:all 0.3s ease-in-out;
+}
+
+.margin-right{
+    margin-right: 10px !important;
+}
+
+@media only screen and (max-width: 336px) {
+    .image .display-4 {
+        font-size: 300%;
+    }
+}
