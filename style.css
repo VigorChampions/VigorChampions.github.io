@@ -160,7 +160,7 @@ p {word-wrap: break-word;
 }
 
 .arrow-right{
-    width: 3.75vh;
+    width: 6vh;
     aspect-ratio: 1/1;
     background-size:cover !important;
     background-position: center !important;
