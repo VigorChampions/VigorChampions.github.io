@@ -277,13 +277,14 @@ a:hover, .navo ul a:hover {
     }
     .navo ul{
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         position: fixed;
         margin: 0;
         text-align: center;
         padding: 0;
         transform: translateX(100%);
-        background-color: #121212;
+        background-color: #1414147a;
+        backdrop-filter: blur(10px);
         transition: 1s all;
     }
     .navo ul a {
