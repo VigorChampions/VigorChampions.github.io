@@ -40,6 +40,26 @@ p {word-wrap: break-word;
     color: #F05454 !important;
 }
 
+.navo ul a {
+    color: #F05454 !important;
+    text-decoration: none !important;
+    font-size: 140%;
+    font-family: "Odibee Sans", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    padding: 10px;
+    transition: all ease-in-out 0.5s; 
+}
+
+a:hover, .navo ul a:hover {
+    color: #993333 !important;
+}
+
+.font-100 {
+    font-size: 100%;
+}
+
 .image {
     width: 85%;
     border-radius: 10px;
@@ -174,7 +194,7 @@ p {word-wrap: break-word;
 }
 
 .arrow-left{
-    width: 3.75vh;
+    width: 6vh;
     aspect-ratio: 1/1;
     background-size:cover !important;
     background-position: center !important;
@@ -199,6 +219,28 @@ p {word-wrap: break-word;
 
 .margin-right{
     margin-right: 10px !important;
+}
+
+.hide{
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transition: 0.5s all ease-in-out;
+}
+
+.burger {
+    float: right !important;
+    margin-top: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#checkbox {
+    display: none;
 }
 
 @keyframes gradientAnimation {
@@ -227,4 +269,34 @@ p {word-wrap: break-word;
     .image .display-4 {
         font-size: 300%;
     }
+}
+
+@media only screen and (max-width: 447px) {
+    .burger {
+        display: block;
+    }
+    .navo ul{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+        transform: translateX(100%);
+        background-color: #121212;
+        transition: 1s all;
+    }
+    .navo ul a {
+        display: block;
+        font-size: 160%;
+    }
+
+    #checkbox:checked ~ ul {
+        transform: translateX(0%);
+    }
+
+    body, html {
+        height: 120vh;
+    }
+    
 }
