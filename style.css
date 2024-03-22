@@ -48,7 +48,7 @@ p {word-wrap: break-word;
     margin-top: 95px;
     aspect-ratio: 16/7;
     object-fit: cover;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url('goal.png');
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url('goal.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -200,6 +200,28 @@ p {word-wrap: break-word;
 .margin-right{
     margin-right: 10px !important;
 }
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .gradient-text {
+    background: linear-gradient(45deg, #F05454, #993333, #F05454);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 5s ease-in-out infinite;
+  }
+
+
 
 @media only screen and (max-width: 336px) {
     .image .display-4 {
