@@ -29,6 +29,10 @@ body {
     font-weight: 500 !important;
 }
 
+.icon{
+    color: #cccccc !important;
+}
+
 .en {
     font-family: "Odibee Sans", sans-serif !important;
 }
@@ -38,7 +42,6 @@ body {
 }
 
 .face {
-    filter: brightness(320%);
     margin-right: 10px;
 }
 
